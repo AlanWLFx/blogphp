@@ -12,7 +12,7 @@
     <header>
         <div class="contenedor">
             <div class="logo izquierda">
-                <p><a href="#">Mi Primer blog</a></p>
+                <p><a href="<?php echo RUTA; ?>">Mi Primer blog</a></p>
             </div>
             <div class="derecha">
                 <form name="busqueda" class="buscar" action="<?php  echo RUTA; ?>/buscar.php" method="GET">

@@ -16,7 +16,7 @@
         </div>
         <div class="post">
             <article>
-                <h2 class="titulo"> Título del artículo</h2>
+                <h2 class="titulo"><a href="#">Título del artículo</h2>
                 <p class="fecha">1 de enero de 2021</p>
                 <div class="thump">
                     <a href="#">
