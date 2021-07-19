@@ -9,7 +9,7 @@
     }
 
    $posts = obtener_post($blog_config['post_por_pagina'], $conexion);
-   print_r($posts);
+   
 
     if(!$posts){
         header('Location: error.php');

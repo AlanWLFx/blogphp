@@ -4,30 +4,22 @@
         <div class="post">
             <article>
                 <h2 class="titulo"> Título del artículo</h2>
-                <p class="fecha">1 de enero de 2021</p>
-                <div class="thump">
-                    <a href="#">
-                        <img src="<?php echo RUTA; ?>/imagenes/1.png" alt="">
+                <h2 class="titulo">
+                    <a href="single.php?id=<?php echo $post['id']?>">
+                        <?php echo $post['titulo']; ?>
                     </a>
-                    <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, consectetur.</p>
-                    <a href="#" class="continuar">Continuar Leyendo</a>
+                    </h2>
+                <p class="fecha"><?php echo $post['fecha']; ?></p>
+                <div class="thump">
+                <a href="single.php?id=<?php echo $post['id']?>">
+                        <img src="<?php echo RUTA; ?>/imagenes/<?php echo $post['thumb'];?>" alt="">
+                    </a>
+                    <p class="extracto"><?php echo $post['extracto']; ?></p>
+                    <a href="single.php?id=<?php echo $post['id']?>" class="continuar">Continuar Leyendo</a>
                 </div>
             </article>
         </div>
-        <div class="post">
-            <article>
-                <h2 class="titulo"><a href="#">Título del artículo</h2>
-                <p class="fecha">1 de enero de 2021</p>
-                <div class="thump">
-                    <a href="#">
-                        <img src="<?php echo RUTA; ?>/imagenes/2.png" alt="">
-                    </a>
-                    <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, consectetur.</p>
-                    <a href="#" class="continuar">Continuar Leyendo</a>
-                </div>
-            </article>
-        </div>
-
+        <?php endforeach; ?>
         <?php require 'paginacion.php'; ?>
 
     </div>
