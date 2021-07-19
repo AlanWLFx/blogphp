@@ -9,7 +9,7 @@
                         <?php echo $post['titulo']; ?>
                     </a>
                     </h2>
-                <p class="fecha"><?php echo $post['fecha']; ?></p>
+                <p class="fecha"><?php echo fecha($post['fecha']); ?></p>
                 <div class="thump">
                 <a href="single.php?id=<?php echo $post['id']?>">
                         <img src="<?php echo RUTA; ?>/imagenes/<?php echo $post['thumb'];?>" alt="">
